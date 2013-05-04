@@ -32,3 +32,5 @@ parallel.run([function (callback) {
 });
 
  ```
+ 
+ TODO: error handling
