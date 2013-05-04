@@ -13,17 +13,19 @@ Usage:
 var parallel = new Parallel();
 
 parallel.run([function (callback) {
-  callback({
+	//do something here
+ 	callback({
 		cucc: '1'
 	});
 }, function (callback) {
+	//do something here
 	setTimeout(function(){
 		callback({
 			sss : '2'
 		});
 	},400);
 }, function (callback) {
-
+	//do something here
 	callback({
 		ge: 'ss'
 	});
