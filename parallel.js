@@ -17,12 +17,11 @@ var Parallel = (function () {
 	}
 
 	ready = function ready (order, data) {
-		console.log(order, data)
 		results[i] = data;
 		readyCounter++;
 		if(readyCounter === parallelCount) {
 			results.sort();
-			callback(null, results)
+			callback(results)
 		}
 	}
 
